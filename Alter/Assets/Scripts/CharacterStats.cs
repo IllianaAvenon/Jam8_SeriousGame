@@ -11,4 +11,5 @@ public class CharacterStats
     public float Sleep;
     public float Thirst;
     public float Hunger;
+    public float Cleanliness;
 }
