@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 4000013018713374}
   - component: {fileID: 33000010336798552}
   - component: {fileID: 23000011444486616}
+  - component: {fileID: 114232527401758706}
   m_Layer: 0
   m_Name: Bookshelf
   m_TagString: Untagged
@@ -145,9 +146,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013609345918}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 8.29, y: 3.93, z: -6.67}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 3.71, y: 0.54, z: -5.56}
+  m_LocalScale: {x: 53.757, y: 53.757, z: 53.757}
   m_Children:
   - {fileID: 4000011868658830}
   - {fileID: 4000013893819218}
@@ -448,3 +449,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013181144556}
   m_Mesh: {fileID: 4300000, guid: 9b74755f49990804a99d5d68ea5d75a2, type: 3}
+--- !u!114 &114232527401758706
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013609345918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 0
+  Movies: 0
+  Reading: 15
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0

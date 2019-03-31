@@ -8,7 +8,6 @@ using System;
 public class Item : MonoBehaviour {
 
     public Transform itemTransform;
-    public float damage;
     
     //Trait tags define positive and negative influences towards goals based on their typing
     public int Art;

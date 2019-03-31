@@ -35,6 +35,11 @@ public class GameManager : MonoBehaviour
                 currentStats.Stress += BaseModifier;
             }
             stressTest = 0.0f;
+            currentStats.Bladder -= 1;
+            currentStats.Sleep -= 1;
+            currentStats.Hunger -= 1;
+            currentStats.Thirst -= 1;
+            currentStats.Cleanliness -= 1;
         }
         
     }
