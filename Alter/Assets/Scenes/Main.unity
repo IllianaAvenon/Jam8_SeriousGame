@@ -4107,8 +4107,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c6c2ce49c63952428034adaaeb568f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NameLabel: {fileID: 0}
-  NameLabel1: {fileID: 0}
+  Bladder: {fileID: 1587081992}
+  Sleep: {fileID: 707873183}
+  Hunger: {fileID: 1991888030}
+  Thirst: {fileID: 884275989}
+  Cleanliness: {fileID: 2093072325}
 --- !u!4 &1745663367 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010332497458, guid: f80d861c4664f014cad0b030b62c4174,
