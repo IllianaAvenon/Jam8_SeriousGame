@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2380,7 +2380,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000010332497458, guid: f80d861c4664f014cad0b030b62c4174, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.38
+      value: -4.08
       objectReference: {fileID: 0}
     - target: {fileID: 4000010332497458, guid: f80d861c4664f014cad0b030b62c4174, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2388,7 +2388,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010332497458, guid: f80d861c4664f014cad0b030b62c4174, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.52
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 4000010332497458, guid: f80d861c4664f014cad0b030b62c4174, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4102,16 +4102,16 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1745663364}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c6c2ce49c63952428034adaaeb568f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bladder: {fileID: 0}
-  Sleep: {fileID: 0}
-  Hunger: {fileID: 0}
-  Thirst: {fileID: 0}
-  Cleanliness: {fileID: 0}
+  Bladder: {fileID: 1587081992}
+  Sleep: {fileID: 707873183}
+  Hunger: {fileID: 1991888030}
+  Thirst: {fileID: 884275989}
+  Cleanliness: {fileID: 2093072325}
 --- !u!4 &1745663367 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010332497458, guid: f80d861c4664f014cad0b030b62c4174,
@@ -4144,6 +4144,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1745663371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745663364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689f98f39e3d19448a13a832dae5a26c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: 0
+  Stats:
+    PhysicalHealth: 0
+    Anxiety: 0
+    Happiness: 0
+    Stress: 0
+    Bladder: 0
+    Sleep: 0
+    Thirst: 0
+    Hunger: 0
+    Cleanliness: 0
+    CurrentTime:
+      Day: 0
+      Hour: 0
 --- !u!1 &1754293938
 GameObject:
   m_ObjectHideFlags: 0
@@ -5377,6 +5402,46 @@ MonoBehaviour:
   Thirst: 0
   Hunger: 0
   Cleanliness: 0
+--- !u!1 &2106677508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2106677510}
+  - component: {fileID: 2106677509}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2106677509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2106677508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c41cb2527403b409a0af102d058487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2106677510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2106677508}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.08, y: 0.25, z: -2.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2124782578
 GameObject:
   m_ObjectHideFlags: 0
