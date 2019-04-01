@@ -34,8 +34,7 @@ public class SaveLoadTester : MonoBehaviour
 
     public void ProgressByOneHour()
     {
-        Stats.CurrentTime.ProgressHour(1);
-        if (Stats.CurrentTime.Hour == 0)
+        if (Stats.CurrentTime.ProgressHour(1))
             movementController.ResetPosition();
     }
 }

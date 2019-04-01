@@ -6,12 +6,13 @@ public class GameTime
     public uint Day;
     public uint Hour;
 
-    public void ProgressHour(uint hour)
+    public bool ProgressHour(uint hour)
     {
         Hour += hour;
-        if (Hour < 24) return;
+        if (Hour < 24) return false;
         Hour -= 24;
         Day += 1;
+        return true;
     }
 }
 
