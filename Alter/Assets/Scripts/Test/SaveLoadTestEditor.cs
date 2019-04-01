@@ -18,5 +18,10 @@ public class ObjectBuilderEditor : Editor
         {
             myScript.Load();
         }
+
+        if (GUILayout.Button("Progress Time by 1 Hour"))
+        {
+            myScript.ProgressByOneHour();
+        }
     }
 }

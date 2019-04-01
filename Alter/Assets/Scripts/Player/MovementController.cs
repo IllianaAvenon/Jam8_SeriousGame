@@ -1,13 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
-    private Animator _animator;   
+    private Animator _animator;
     private Camera _mainCamera;
     private Vector3 _cameraRight;
     private Vector3 _cameraForward;
+    private Vector3 _originalPosition;
+    private Quaternion _originalRotation;
     private static readonly int Walking = Animator.StringToHash("Walking");
     private static readonly int MoveSpeed = Animator.StringToHash("MoveSpeed");
 
@@ -16,7 +16,8 @@ public class MovementController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _mainCamera = Camera.main;
-
+        _originalPosition = transform.position;
+        _originalRotation = transform.rotation;
         if (_mainCamera != null)
         {
             var right = _mainCamera.transform.right;
@@ -27,7 +28,7 @@ public class MovementController : MonoBehaviour
         {
             Debug.LogError("Need a main camera!");
         }
-        
+
         if (_animator == null)
         {
             Debug.LogError("Animator not found! Please attach an animator when using this script.", _animator);
@@ -39,16 +40,22 @@ public class MovementController : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        
+
         Vector2 direction = new Vector2(horizontal, vertical);
-        
+
         Vector3 moveDirection = horizontal * _cameraRight + vertical * _cameraForward;
-        
+
         transform.LookAt(transform.position + moveDirection);
 
-        transform.position += transform.forward * direction.magnitude * 
-                              Time.deltaTime * _animator.GetFloat(MoveSpeed) * 2;
-        
+        transform.position += transform.forward * direction.magnitude *
+                              Time.deltaTime/* * _animator.GetFloat(MoveSpeed)*/ * 2;
+
         _animator.SetBool(Walking, direction.magnitude > 0.001f);
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = _originalPosition;
+        transform.rotation = _originalRotation;
     }
 }
