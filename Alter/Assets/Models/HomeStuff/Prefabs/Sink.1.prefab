@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33000013325142040}
   - component: {fileID: 23000012196349968}
   - component: {fileID: 114575803986546824}
+  - component: {fileID: 65840243293812672}
   m_Layer: 0
   m_Name: Sink.1
   m_TagString: Untagged
@@ -84,6 +85,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012595975274}
   m_Mesh: {fileID: 4300000, guid: 56c0c7640260a9c4bba1d681d44ded82, type: 3}
+--- !u!65 &65840243293812672
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012595975274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09686024, y: 0.039842006, z: 0.022822382}
+  m_Center: {x: -0.0000024214394, y: 0.0048984815, z: 0.00023589615}
 --- !u!114 &114575803986546824
 MonoBehaviour:
   m_ObjectHideFlags: 1

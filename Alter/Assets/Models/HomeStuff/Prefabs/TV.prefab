@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4000010920743216}
   - component: {fileID: 33000010088226704}
   - component: {fileID: 23000010337474026}
+  - component: {fileID: 114105805993059406}
+  - component: {fileID: 65594760496795792}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -34,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011553860684}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.73, y: 2, z: -21.71}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0.09, y: 1.018, z: 5.543}
+  m_LocalScale: {x: 28.29, y: 28.29, z: 28.29}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!23 &23000010337474026
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -83,3 +85,45 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011553860684}
   m_Mesh: {fileID: 4300000, guid: e08e523cc4367234e8b33dbe7552795d, type: 3}
+--- !u!65 &65594760496795792
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011553860684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04582202, y: 0.027228301, z: 0.008364342}
+  m_Center: {x: 0, y: 0.00006023701, z: -0.0009581594}
+--- !u!114 &114105805993059406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011553860684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 15
+  Movies: 15
+  Reading: 0
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0

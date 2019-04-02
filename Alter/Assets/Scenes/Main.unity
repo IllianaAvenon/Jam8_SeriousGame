@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -535,7 +535,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000013026240068, guid: 6d342eee9ce10d34eabfc49d8fbd2c6f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.453
+      value: 3.44
       objectReference: {fileID: 0}
     - target: {fileID: 4000013026240068, guid: 6d342eee9ce10d34eabfc49d8fbd2c6f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -565,22 +565,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013026240068, guid: 6d342eee9ce10d34eabfc49d8fbd2c6f, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013026240068, guid: 6d342eee9ce10d34eabfc49d8fbd2c6f, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013026240068, guid: 6d342eee9ce10d34eabfc49d8fbd2c6f, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013026240068, guid: 6d342eee9ce10d34eabfc49d8fbd2c6f, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 100.144135
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d342eee9ce10d34eabfc49d8fbd2c6f, type: 2}
   m_IsPrefabAsset: 0
@@ -589,41 +573,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000013026240068, guid: 6d342eee9ce10d34eabfc49d8fbd2c6f,
     type: 2}
   m_PrefabInternal: {fileID: 147760268}
---- !u!1 &147760270 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000010842773494, guid: 6d342eee9ce10d34eabfc49d8fbd2c6f,
-    type: 2}
-  m_PrefabInternal: {fileID: 147760268}
---- !u!114 &147760271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 147760270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
 --- !u!1 &159710439
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,22 +996,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013191001076, guid: 6a820aef5b4bbe449826505731f23459, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 98.76601
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013191001076, guid: 6a820aef5b4bbe449826505731f23459, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 32.813007
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013191001076, guid: 6a820aef5b4bbe449826505731f23459, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 32.813
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013191001076, guid: 6a820aef5b4bbe449826505731f23459, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 32.813007
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a820aef5b4bbe449826505731f23459, type: 2}
   m_IsPrefabAsset: 0
@@ -1071,41 +1004,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000013191001076, guid: 6a820aef5b4bbe449826505731f23459,
     type: 2}
   m_PrefabInternal: {fileID: 340386659}
---- !u!1 &340386661 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000012081721328, guid: 6a820aef5b4bbe449826505731f23459,
-    type: 2}
-  m_PrefabInternal: {fileID: 340386659}
---- !u!114 &340386662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 340386661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
 --- !u!1001 &348533700
 Prefab:
   m_ObjectHideFlags: 0
@@ -1642,18 +1540,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013747989324, guid: 738c078743e37d34baf164992215b776, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 32.541
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013747989324, guid: 738c078743e37d34baf164992215b776, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 32.541
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013747989324, guid: 738c078743e37d34baf164992215b776, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 32.541
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 738c078743e37d34baf164992215b776, type: 2}
   m_IsPrefabAsset: 0
@@ -1662,41 +1548,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000013747989324, guid: 738c078743e37d34baf164992215b776,
     type: 2}
   m_PrefabInternal: {fileID: 522504904}
---- !u!1 &522504906 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000011561281016, guid: 738c078743e37d34baf164992215b776,
-    type: 2}
-  m_PrefabInternal: {fileID: 522504904}
---- !u!114 &522504907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 522504906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
 --- !u!1 &542506232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2399,6 +2250,18 @@ MonoBehaviour:
   Thirst: 0
   Hunger: 0
   Cleanliness: 0
+--- !u!65 &653832247
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 653832245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.012665013, y: 0.052212022, z: 0.013316782}
+  m_Center: {x: -2.3283064e-10, y: -0.00540486, z: -0.0000000023283064}
 --- !u!1 &664050633
 GameObject:
   m_ObjectHideFlags: 0
@@ -2697,18 +2560,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 4000011046743032, guid: 1238da40397ef9d428b6d3212674e684, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 38.582016
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011046743032, guid: 1238da40397ef9d428b6d3212674e684, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 38.582
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011046743032, guid: 1238da40397ef9d428b6d3212674e684, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 38.582016
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1238da40397ef9d428b6d3212674e684, type: 2}
   m_IsPrefabAsset: 0
@@ -2846,18 +2697,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 4000011979747692, guid: e053dc897fa5cd74dbc81e55e06a1614, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 29.116865
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011979747692, guid: e053dc897fa5cd74dbc81e55e06a1614, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 29.116865
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011979747692, guid: e053dc897fa5cd74dbc81e55e06a1614, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 29.116865
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e053dc897fa5cd74dbc81e55e06a1614, type: 2}
   m_IsPrefabAsset: 0
@@ -2866,41 +2705,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000011979747692, guid: e053dc897fa5cd74dbc81e55e06a1614,
     type: 2}
   m_PrefabInternal: {fileID: 778163360}
---- !u!1 &778163362 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000010754454028, guid: e053dc897fa5cd74dbc81e55e06a1614,
-    type: 2}
-  m_PrefabInternal: {fileID: 778163360}
---- !u!114 &778163363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 778163362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
 --- !u!1 &781167145
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,22 +3283,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
-    - target: {fileID: 4000012125928024, guid: 83b95243d15f01b4e85b125582c896c5, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 25.552814
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012125928024, guid: 83b95243d15f01b4e85b125582c896c5, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 26.9724
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012125928024, guid: 83b95243d15f01b4e85b125582c896c5, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 26.972416
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012125928024, guid: 83b95243d15f01b4e85b125582c896c5, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83b95243d15f01b4e85b125582c896c5, type: 2}
   m_IsPrefabAsset: 0
@@ -3503,41 +3291,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000012125928024, guid: 83b95243d15f01b4e85b125582c896c5,
     type: 2}
   m_PrefabInternal: {fileID: 969298947}
---- !u!1 &969298949 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000010004895028, guid: 83b95243d15f01b4e85b125582c896c5,
-    type: 2}
-  m_PrefabInternal: {fileID: 969298947}
---- !u!114 &969298950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 969298949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
 --- !u!1 &976755289
 GameObject:
   m_ObjectHideFlags: 0
@@ -3662,22 +3415,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 4000011760555468, guid: c90de59bff4939e4bbe4cd9324b0decc, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011760555468, guid: c90de59bff4939e4bbe4cd9324b0decc, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 41.665
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011760555468, guid: c90de59bff4939e4bbe4cd9324b0decc, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 41.665
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011760555468, guid: c90de59bff4939e4bbe4cd9324b0decc, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 41.665
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c90de59bff4939e4bbe4cd9324b0decc, type: 2}
   m_IsPrefabAsset: 0
@@ -3686,41 +3423,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000011760555468, guid: c90de59bff4939e4bbe4cd9324b0decc,
     type: 2}
   m_PrefabInternal: {fileID: 982574611}
---- !u!1 &982574613 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000011110786804, guid: c90de59bff4939e4bbe4cd9324b0decc,
-    type: 2}
-  m_PrefabInternal: {fileID: 982574611}
---- !u!114 &982574614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 982574613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 60
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
 --- !u!1 &1012875482
 GameObject:
   m_ObjectHideFlags: 0
@@ -4679,22 +4381,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4000011832958230, guid: ca1b6a54d5f844248a66c6339eabffed, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011832958230, guid: ca1b6a54d5f844248a66c6339eabffed, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 46.467
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011832958230, guid: ca1b6a54d5f844248a66c6339eabffed, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 46.467
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011832958230, guid: ca1b6a54d5f844248a66c6339eabffed, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 46.467
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca1b6a54d5f844248a66c6339eabffed, type: 2}
   m_IsPrefabAsset: 0
@@ -4703,41 +4389,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000011832958230, guid: ca1b6a54d5f844248a66c6339eabffed,
     type: 2}
   m_PrefabInternal: {fileID: 1103802893}
---- !u!1 &1103802895 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000012862128748, guid: ca1b6a54d5f844248a66c6339eabffed,
-    type: 2}
-  m_PrefabInternal: {fileID: 1103802893}
---- !u!114 &1103802896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1103802895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
 --- !u!1001 &1126989626
 Prefab:
   m_ObjectHideFlags: 0
@@ -5305,18 +4956,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 4000011880463214, guid: f266cbc0b1e72924f909c3ea2b746949, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 27.183485
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011880463214, guid: f266cbc0b1e72924f909c3ea2b746949, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 27.183485
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000011880463214, guid: f266cbc0b1e72924f909c3ea2b746949, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 27.183485
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f266cbc0b1e72924f909c3ea2b746949, type: 2}
   m_IsPrefabAsset: 0
@@ -5325,41 +4964,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000011880463214, guid: f266cbc0b1e72924f909c3ea2b746949,
     type: 2}
   m_PrefabInternal: {fileID: 1277395539}
---- !u!1 &1277395541 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000011182921886, guid: f266cbc0b1e72924f909c3ea2b746949,
-    type: 2}
-  m_PrefabInternal: {fileID: 1277395539}
---- !u!114 &1277395542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1277395541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
 --- !u!1 &1305370154
 GameObject:
   m_ObjectHideFlags: 0
@@ -5740,11 +5344,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114603594049958556, guid: d87d11194b29e3a4c87503bd09c0a664,
-        type: 2}
-      propertyPath: Bladder
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d87d11194b29e3a4c87503bd09c0a664, type: 2}
   m_IsPrefabAsset: 0
@@ -5839,18 +5438,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013120964812, guid: 3d257e714ef9ccd449e0d0e0e373e1e5, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 41.400017
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013120964812, guid: 3d257e714ef9ccd449e0d0e0e373e1e5, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 24.151518
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013120964812, guid: 3d257e714ef9ccd449e0d0e0e373e1e5, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 41.400017
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d257e714ef9ccd449e0d0e0e373e1e5, type: 2}
   m_IsPrefabAsset: 0
@@ -5899,281 +5486,102 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1000011578009604, guid: 3d257e714ef9ccd449e0d0e0e373e1e5,
     type: 2}
   m_PrefabInternal: {fileID: 1555261464}
---- !u!1 &1555261474 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000014116007982, guid: 3d257e714ef9ccd449e0d0e0e373e1e5,
-    type: 2}
-  m_PrefabInternal: {fileID: 1555261464}
---- !u!114 &1555261475
-MonoBehaviour:
+--- !u!65 &1555261485
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555261466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
---- !u!114 &1555261476
-MonoBehaviour:
+  serializedVersion: 2
+  m_Size: {x: 0.014122916, y: 0.029348806, z: 0.013304665}
+  m_Center: {x: 0.00000076415046, y: -0.002268339, z: -0.002336952}
+--- !u!65 &1555261489
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555261467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
---- !u!114 &1555261477
-MonoBehaviour:
+  serializedVersion: 2
+  m_Size: {x: 0.014122915, y: 0.029348806, z: 0.013304663}
+  m_Center: {x: 0.000000766013, y: -0.002268341, z: -0.0023369496}
+--- !u!65 &1555261493
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555261468}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
---- !u!114 &1555261478
-MonoBehaviour:
+  serializedVersion: 2
+  m_Size: {x: 0.014122916, y: 0.02934881, z: 0.013304665}
+  m_Center: {x: 0.00000075483723, y: -0.0022683393, z: -0.0023369482}
+--- !u!65 &1555261498
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555261469}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
---- !u!114 &1555261479
-MonoBehaviour:
+  serializedVersion: 2
+  m_Size: {x: 0.014122915, y: 0.029348806, z: 0.013304663}
+  m_Center: {x: 0.0000007622877, y: -0.002268341, z: -0.0023369505}
+--- !u!65 &1555261502
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555261470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
---- !u!114 &1555261480
-MonoBehaviour:
+  serializedVersion: 2
+  m_Size: {x: 0.014122916, y: 0.029348806, z: 0.013304665}
+  m_Center: {x: 0.0000007622878, y: -0.002268339, z: -0.00233695}
+--- !u!65 &1555261506
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555261471}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
---- !u!114 &1555261481
-MonoBehaviour:
+  serializedVersion: 2
+  m_Size: {x: 0.014122915, y: 0.02934881, z: 0.013304663}
+  m_Center: {x: 0.0000007585624, y: -0.0022683374, z: -0.0023369496}
+--- !u!65 &1555261510
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555261472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
---- !u!114 &1555261482
-MonoBehaviour:
+  serializedVersion: 2
+  m_Size: {x: 0.014122918, y: 0.029348806, z: 0.013304667}
+  m_Center: {x: 0.00000076228787, y: -0.002268341, z: -0.0023369475}
+--- !u!65 &1555261514
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555261473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
---- !u!114 &1555261483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1555261474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
+  serializedVersion: 2
+  m_Size: {x: 0.014122918, y: 0.02934881, z: 0.013304667}
+  m_Center: {x: 0.00000076205504, y: -0.0022683393, z: -0.002336939}
 --- !u!1 &1556060135
 GameObject:
   m_ObjectHideFlags: 0
@@ -6763,18 +6171,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4000012195402566, guid: f77ebcdeb49293c40889ebc9f839e6e4, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 47.586
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012195402566, guid: f77ebcdeb49293c40889ebc9f839e6e4, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 28.082401
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012195402566, guid: f77ebcdeb49293c40889ebc9f839e6e4, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 47.586
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f77ebcdeb49293c40889ebc9f839e6e4, type: 2}
   m_IsPrefabAsset: 0
@@ -6783,41 +6179,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000012195402566, guid: f77ebcdeb49293c40889ebc9f839e6e4,
     type: 2}
   m_PrefabInternal: {fileID: 1785842184}
---- !u!1 &1785842186 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000012654435310, guid: f77ebcdeb49293c40889ebc9f839e6e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1785842184}
---- !u!114 &1785842187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1785842186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
 --- !u!1001 &1822791920
 Prefab:
   m_ObjectHideFlags: 0
@@ -7611,22 +6972,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4000014112438746, guid: 959725da582aa9c4191ee51ee55fcaaa, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014112438746, guid: 959725da582aa9c4191ee51ee55fcaaa, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 51.607002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014112438746, guid: 959725da582aa9c4191ee51ee55fcaaa, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 51.607002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014112438746, guid: 959725da582aa9c4191ee51ee55fcaaa, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 51.607002
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959725da582aa9c4191ee51ee55fcaaa, type: 2}
   m_IsPrefabAsset: 0
@@ -7635,41 +6980,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000014112438746, guid: 959725da582aa9c4191ee51ee55fcaaa,
     type: 2}
   m_PrefabInternal: {fileID: 1954324644}
---- !u!1 &1954324646 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013718829090, guid: 959725da582aa9c4191ee51ee55fcaaa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1954324644}
---- !u!114 &1954324647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1954324646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 0
-  Movies: 0
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
 --- !u!1001 &1969775509
 Prefab:
   m_ObjectHideFlags: 0
@@ -7709,22 +7019,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 4000010920743216, guid: 7841159c855bb0d44bcc9f1f89548d64, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010920743216, guid: 7841159c855bb0d44bcc9f1f89548d64, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 28.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010920743216, guid: 7841159c855bb0d44bcc9f1f89548d64, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 28.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010920743216, guid: 7841159c855bb0d44bcc9f1f89548d64, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 28.29
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7841159c855bb0d44bcc9f1f89548d64, type: 2}
   m_IsPrefabAsset: 0
@@ -7733,41 +7027,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000010920743216, guid: 7841159c855bb0d44bcc9f1f89548d64,
     type: 2}
   m_PrefabInternal: {fileID: 1969775509}
---- !u!1 &1969775511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000011553860684, guid: 7841159c855bb0d44bcc9f1f89548d64,
-    type: 2}
-  m_PrefabInternal: {fileID: 1969775509}
---- !u!114 &1969775512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1969775511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemTransform: {fileID: 0}
-  Art: 0
-  Science: 0
-  Cooking: 0
-  Maths: 0
-  Music: 0
-  Metalworking: 0
-  Romance: 0
-  Fashion: 0
-  Mechanical: 0
-  Programming: 0
-  Gaming: 15
-  Movies: 15
-  Reading: 0
-  Bladder: 0
-  Sleep: 0
-  Thirst: 0
-  Hunger: 0
-  Cleanliness: 0
 --- !u!1 &1991888028
 GameObject:
   m_ObjectHideFlags: 0

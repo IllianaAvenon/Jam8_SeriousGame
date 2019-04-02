@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33000014172653070}
   - component: {fileID: 23000012460582302}
   - component: {fileID: 114474457987486406}
+  - component: {fileID: 65189006954907348}
   m_Layer: 0
   m_Name: Bathtub
   m_TagString: Untagged
@@ -84,6 +85,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013985145586}
   m_Mesh: {fileID: 4300000, guid: 47f8c297fa1cc4048a965530702b353d, type: 3}
+--- !u!65 &65189006954907348
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013985145586}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.056233343, y: 0.05075886, z: 0.022627799}
+  m_Center: {x: 0.00030491033, y: 0.016448282, z: -0.00028632858}
 --- !u!114 &114474457987486406
 MonoBehaviour:
   m_ObjectHideFlags: 1

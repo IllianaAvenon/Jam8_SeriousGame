@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4000011530351456}
   - component: {fileID: 33000010872359018}
   - component: {fileID: 23000011930923156}
+  - component: {fileID: 114814335688311820}
   m_Layer: 0
   m_Name: Chair (4)
   m_TagString: Untagged
@@ -38,6 +39,7 @@ GameObject:
   - component: {fileID: 4000011577227820}
   - component: {fileID: 33000012972745226}
   - component: {fileID: 23000013806283142}
+  - component: {fileID: 114159101393584366}
   m_Layer: 0
   m_Name: Chair (7)
   m_TagString: Untagged
@@ -55,6 +57,7 @@ GameObject:
   - component: {fileID: 4000010074663800}
   - component: {fileID: 33000011411882642}
   - component: {fileID: 23000011054825354}
+  - component: {fileID: 114491694544586074}
   m_Layer: 0
   m_Name: Chair
   m_TagString: Untagged
@@ -72,6 +75,7 @@ GameObject:
   - component: {fileID: 4000013094735420}
   - component: {fileID: 33000010720514272}
   - component: {fileID: 23000013335040604}
+  - component: {fileID: 114344573286075472}
   m_Layer: 0
   m_Name: Chair (2)
   m_TagString: Untagged
@@ -89,6 +93,7 @@ GameObject:
   - component: {fileID: 4000012314197496}
   - component: {fileID: 33000010318957174}
   - component: {fileID: 23000012698543164}
+  - component: {fileID: 114866146385256428}
   m_Layer: 0
   m_Name: Chair (6)
   m_TagString: Untagged
@@ -106,6 +111,7 @@ GameObject:
   - component: {fileID: 4000011752654510}
   - component: {fileID: 33000013353663224}
   - component: {fileID: 23000010278354406}
+  - component: {fileID: 114067458624068550}
   m_Layer: 0
   m_Name: Chair (3)
   m_TagString: Untagged
@@ -123,6 +129,7 @@ GameObject:
   - component: {fileID: 4000013973161444}
   - component: {fileID: 33000010498658920}
   - component: {fileID: 23000012360978884}
+  - component: {fileID: 114639950199098106}
   m_Layer: 0
   m_Name: Chair (1)
   m_TagString: Untagged
@@ -140,6 +147,8 @@ GameObject:
   - component: {fileID: 4000012076707726}
   - component: {fileID: 33000011400998624}
   - component: {fileID: 23000010176097664}
+  - component: {fileID: 114204776964825824}
+  - component: {fileID: 65714366061647276}
   m_Layer: 0
   m_Name: Chair (5)
   m_TagString: Untagged
@@ -157,6 +166,8 @@ GameObject:
   - component: {fileID: 4000013120964812}
   - component: {fileID: 33000011651655890}
   - component: {fileID: 23000014194201144}
+  - component: {fileID: 114174542607028068}
+  - component: {fileID: 65334369000923858}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -261,9 +272,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014116007982}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.46, y: 1.22, z: 3.99}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.13, y: 0.74, z: -1.8188125}
+  m_LocalScale: {x: 41.400017, y: 24.151518, z: 41.400017}
   m_Children:
   - {fileID: 4000010074663800}
   - {fileID: 4000013973161444}
@@ -667,3 +678,297 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013427112942}
   m_Mesh: {fileID: 4300000, guid: f42838308461a634682be0b1eb1a5a4c, type: 3}
+--- !u!65 &65334369000923858
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014116007982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06042079, y: 0.0253446, z: 0.027560342}
+  m_Center: {x: 0.00000411179, y: -0.0091894865, z: 0.000016866255}
+--- !u!65 &65714366061647276
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013904585080}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.014122916, y: 0.02934881, z: 0.013304665}
+  m_Center: {x: 0.00000075483723, y: -0.0022683393, z: -0.0023369482}
+--- !u!114 &114067458624068550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013427112942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 0
+  Movies: 0
+  Reading: 0
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0
+--- !u!114 &114159101393584366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010681566286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 0
+  Movies: 0
+  Reading: 0
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0
+--- !u!114 &114174542607028068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014116007982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 0
+  Movies: 0
+  Reading: 0
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0
+--- !u!114 &114204776964825824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013904585080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 0
+  Movies: 0
+  Reading: 0
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0
+--- !u!114 &114344573286075472
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012257763312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 0
+  Movies: 0
+  Reading: 0
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0
+--- !u!114 &114491694544586074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011578009604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 0
+  Movies: 0
+  Reading: 0
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0
+--- !u!114 &114639950199098106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013697855522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 0
+  Movies: 0
+  Reading: 0
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0
+--- !u!114 &114814335688311820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010677060380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 0
+  Movies: 0
+  Reading: 0
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0
+--- !u!114 &114866146385256428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012666406730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 0
+  Movies: 0
+  Reading: 0
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33000012775945646}
   - component: {fileID: 23000014168925390}
   - component: {fileID: 114483860239246138}
+  - component: {fileID: 65195470283715840}
   m_Layer: 0
   m_Name: Mirror.1
   m_TagString: Untagged
@@ -84,6 +85,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013024148770}
   m_Mesh: {fileID: 4300000, guid: 817904b925651f148b5093e4b4274a1a, type: 3}
+--- !u!65 &65195470283715840
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013024148770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024467131, y: 0.051698755, z: 0.015030728}
+  m_Center: {x: 4.6566145e-10, y: 0.0039871577, z: 0.0033536672}
 --- !u!114 &114483860239246138
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4000013747989324}
   - component: {fileID: 33000013255562136}
   - component: {fileID: 23000014078013146}
+  - component: {fileID: 114968650198031996}
+  - component: {fileID: 65265639124281086}
   m_Layer: 0
   m_Name: Trash
   m_TagString: Untagged
@@ -35,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011561281016}
   m_LocalRotation: {x: 0, y: 0.8314698, z: -0, w: -0.55557}
-  m_LocalPosition: {x: 2.96, y: -0.094, z: -1.3}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalPosition: {x: 4.536, y: 0.526, z: 5.167}
+  m_LocalScale: {x: 32.541, y: 32.541, z: 32.541}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,3 +85,45 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011561281016}
   m_Mesh: {fileID: 4300000, guid: 04eb2a943a4c2714e9d66b99957bcf8d, type: 3}
+--- !u!65 &65265639124281086
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011561281016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008259, y: 0.017013052, z: 0.009432782}
+  m_Center: {x: -0.0000028426293, y: 0.000029057263, z: 0.00047777314}
+--- !u!114 &114968650198031996
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011561281016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 0
+  Movies: 0
+  Reading: 0
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0

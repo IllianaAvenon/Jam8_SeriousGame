@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33000014269547898}
   - component: {fileID: 23000010694674520}
   - component: {fileID: 114801382894623032}
+  - component: {fileID: 65666241246870524}
   m_Layer: 0
   m_Name: Drawer
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010396448152}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -5.62, y: 0.65, z: -1.357}
+  m_LocalPosition: {x: -5.62, y: 0.65, z: -2.05}
   m_LocalScale: {x: 38.582016, y: 38.582, z: 38.582016}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,6 +85,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010396448152}
   m_Mesh: {fileID: 4300000, guid: b36dbcc8ef8059c4a9c8f753d6b0350b, type: 3}
+--- !u!65 &65666241246870524
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010396448152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017866628, y: 0.02136081, z: 0.018999508}
+  m_Center: {x: 0.0000001927838, y: -0.000010660384, z: 0.00013471582}
 --- !u!114 &114801382894623032
 MonoBehaviour:
   m_ObjectHideFlags: 1

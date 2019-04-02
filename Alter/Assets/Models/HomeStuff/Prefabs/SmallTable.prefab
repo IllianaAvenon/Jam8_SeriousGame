@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4000012195402566}
   - component: {fileID: 33000010456107828}
   - component: {fileID: 23000013569519460}
+  - component: {fileID: 114984379412676422}
+  - component: {fileID: 65301278767290436}
   m_Layer: 0
   m_Name: SmallTable
   m_TagString: Untagged
@@ -34,9 +36,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012654435310}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -6.77, y: -0.03, z: -15.29}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0.11, y: 0.475, z: 3.725}
+  m_LocalScale: {x: 47.586, y: 28.082401, z: 47.586}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,3 +85,45 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012654435310}
   m_Mesh: {fileID: 4300000, guid: 5348532066f268a4c92eb5aa85f500dd, type: 3}
+--- !u!65 &65301278767290436
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012654435310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.031741127, y: 0.010495183, z: 0.018297069}
+  m_Center: {x: 9.313226e-10, y: -0.004226876, z: -4.656613e-10}
+--- !u!114 &114984379412676422
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012654435310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e09dce4fc5694f4b93529b232b7e845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTransform: {fileID: 0}
+  Art: 0
+  Science: 0
+  Cooking: 0
+  Maths: 0
+  Music: 0
+  Metalworking: 0
+  Romance: 0
+  Fashion: 0
+  Mechanical: 0
+  Programming: 0
+  Gaming: 0
+  Movies: 0
+  Reading: 0
+  Bladder: 0
+  Sleep: 0
+  Thirst: 0
+  Hunger: 0
+  Cleanliness: 0
