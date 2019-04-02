@@ -11,6 +11,7 @@ public class StatsUI : MonoBehaviour
     public Image Hunger;
     public Image Thirst;
     public Image Cleanliness;
+    public GameManager gameManager;
 
     //Set Stat Positions according to camera
     float YAxisCount = 100.0f*4;
@@ -82,17 +83,16 @@ public class StatsUI : MonoBehaviour
         Thirst.transform.localScale = ThirstStatScale;
         Cleanliness.transform.localScale = CleanlinessStatScale;
 
+        gameManager = gameManager.GetComponent<GameManager>();
     }
 
     //Functions takes two arguments- 1) Pass the string tag ie.e the name of the stat. 
     //2) Affected stat amount. Pass value from 1-100 as int. As the function is based on scale, I convert it to 0-1 range in the function.  
-    public void SetStatAmount(string tag, int AmountInBar)
+    public void SetStatAmount(string tag, float AmountInBar)
     {
         if(tag=="Bladder")
         {
-            
             BladderStatScale.x = (float)(AmountInBar) / 100;
-
         }
         else if(tag=="Sleep")
         {
@@ -110,7 +110,6 @@ public class StatsUI : MonoBehaviour
         {
             CleanlinessStatScale.x = (float)(AmountInBar) /100;
         }
-      
     }
 
 
@@ -118,6 +117,13 @@ public class StatsUI : MonoBehaviour
 	void Update () {
 
         // Change the scale of the stats from function SetStatAmount().
+        BladderStatScale.x = Mathf.Clamp(gameManager.currentStats.Bladder / 10, 0.0f, 1.0f);
+        SleepStatScale.x = gameManager.currentStats.Sleep;
+        ThirstStatScale.x = gameManager.currentStats.Thirst / 10.0f;
+        HungerStatScale.x = gameManager.currentStats.Hunger / 10.0f;
+        CleanlinessStatScale.x = gameManager.currentStats.Cleanliness / 10.0f;
+
+
         Bladder.transform.localScale = BladderStatScale;
         Sleep.transform.localScale = SleepStatScale;
         Hunger.transform.localScale = HungerStatScale;

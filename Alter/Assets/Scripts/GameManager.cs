@@ -13,11 +13,12 @@ public class GameManager : MonoBehaviour
     public string[] StatsConversion = { "Bladder", "Sleep", "Thirst", "Hunger", "Cleanliness" };
     public float BaseModifier = 0.3f;
     public float stressTest = 0.0f;
+    public Animator fade;
 
     private void Start()
     {
-        currentStats = physicalPlayer.GetComponent<CharacterStats>();
-        currentGoals = currentAlter.GetComponent<Goals>();
+        //currentStats = physicalPlayer.GetComponent<CharacterStats>();
+        //currentGoals = currentAlter.GetComponent<Goals>();
     }
 
     private void Update()
@@ -41,7 +42,12 @@ public class GameManager : MonoBehaviour
             currentStats.Thirst -= 1;
             currentStats.Cleanliness -= 1;
         }
-        
+
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            fade.SetTrigger("enter");
+        }
     }
 
     public void OnInteraction(GameObject item)
