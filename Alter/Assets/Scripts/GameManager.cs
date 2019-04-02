@@ -7,23 +7,23 @@ public class GameManager : MonoBehaviour
 {
     public GameObject physicalPlayer;
     public GameObject currentAlter;
-    public CharacterStats currentStats;
+    public SaveLoadTester currentStats;
     public Goals currentGoals;
     public string[] GoalsConversion = { "Art", "Science", "Cooking", "Maths", "Music", "Metalworking", "Romance", "Fashion", "Mechanical", "Programming", "Gaming", "Movies", "Reading" };
     public string[] StatsConversion = { "Bladder", "Sleep", "Thirst", "Hunger", "Cleanliness" };
     public float BaseModifier = 0.3f;
     public float stressTest = 0.0f;
     public Animator fade;
+    public GameObject Radio;
 
     private void Start()
     {
-        //currentStats = physicalPlayer.GetComponent<CharacterStats>();
-        //currentGoals = currentAlter.GetComponent<Goals>();
+        currentStats = physicalPlayer.GetComponent<SaveLoadTester>();
     }
 
     private void Update()
     {
-        if (currentStats.Anxiety > 85 || currentStats.Stress > 85 || currentStats.Anxiety + currentStats.Stress > 68)
+        if (currentStats.Stats.Anxiety > 85 || currentStats.Stats.Stress > 85 || currentStats.Stats.Anxiety + currentStats.Stats.Stress > 68)
         {
             ///TODO : Switching
         }
@@ -31,40 +31,54 @@ public class GameManager : MonoBehaviour
         stressTest += Time.deltaTime;
         if (stressTest > 300.0f)
         {
-            if (currentStats.Bladder < 15 || currentStats.Sleep < 15 || currentStats.Thirst < 15 || currentStats.Hunger < 15 || currentStats.Cleanliness < 15 || currentStats.Bladder + currentStats.Sleep + currentStats.Thirst + currentStats.Hunger + currentStats.Cleanliness < 80)
+            if (currentStats.Stats.Bladder < 15 || currentStats.Stats.Sleep < 15 || currentStats.Stats.Thirst < 15 || currentStats.Stats.Hunger < 15 || currentStats.Stats.Cleanliness < 15 || currentStats.Stats.Bladder + currentStats.Stats.Sleep + currentStats.Stats.Thirst + currentStats.Stats.Hunger + currentStats.Stats.Cleanliness < 80)
             {
-                currentStats.Stress += BaseModifier;
+                currentStats.Stats.Stress += BaseModifier;
             }
             stressTest = 0.0f;
-            currentStats.Bladder -= 1;
-            currentStats.Sleep -= 1;
-            currentStats.Hunger -= 1;
-            currentStats.Thirst -= 1;
-            currentStats.Cleanliness -= 1;
+            currentStats.Stats.Bladder -= 1;
+            currentStats.Stats.Sleep -= 1;
+            currentStats.Stats.Hunger -= 1;
+            currentStats.Stats.Thirst -= 1;
+            currentStats.Stats.Cleanliness -= 1;
         }
 
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             fade.SetTrigger("enter");
+            currentStats.Stats = StatsSaverLoader.Instance.Load(++currentStats.PlayerID);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, float.PositiveInfinity))
+            {
+                Debug.Log(hit.collider);
+                OnInteraction(hit.collider.gameObject);
+            }
         }
     }
 
-    public void OnInteraction(GameObject item)
+      public void OnInteraction(GameObject item)
     {
+        if(item.name == "Radio") { Radio.SetActive(true); }
         Item interactedItem = item.GetComponent<Item>();
+        if (interactedItem == null) return;
         int[] Influencers = interactedItem.GetTags();
-        int[] goalsList = { };
-        int[] statsList = { };
+        List<int> goalsList = new List<int>();
+       List<int> statsList = new List<int>();
 
         for (int i = 0; i < Influencers.Length - 5; i++)
         {
-            goalsList[i] = Influencers[i];
+            goalsList.Add(Influencers[i]);
         }
 
         for (int i = Influencers.Length - 5; i < Influencers.Length; i++)
         {
-            statsList[i] = Influencers[i];
+            statsList.Add(Influencers[i]);
         }
 
 
@@ -79,16 +93,16 @@ public class GameManager : MonoBehaviour
             {
                 if (currentGoals.listOfGoals.Contains(GoalsConversion[index]))
                 {
-                    currentStats.Anxiety -= (float)tag * BaseModifier;
-                    currentStats.Stress -= (float)tag * BaseModifier;
-                    currentStats.Happiness += (float)tag * BaseModifier;
+                    currentStats.Stats.Anxiety -= (float)tag * BaseModifier;
+                    currentStats.Stats.Stress -= (float)tag * BaseModifier;
+                    currentStats.Stats.Happiness += (float)tag * BaseModifier;
                 }
 
                 else
                 {
-                    currentStats.Anxiety += (float)tag * BaseModifier;
-                    currentStats.Stress += (float)tag * BaseModifier;
-                    currentStats.Happiness -= (float)tag * BaseModifier;
+                    currentStats.Stats.Anxiety += (float)tag * BaseModifier;
+                    currentStats.Stats.Stress += (float)tag * BaseModifier;
+                    currentStats.Stats.Happiness -= (float)tag * BaseModifier;
                 }
             }
 
@@ -97,17 +111,17 @@ public class GameManager : MonoBehaviour
         index = 0;
 
         //Sort out Effects of Objects on Physical State
-        for(int i = 0; i < statsList.Length; i++ )
+        for(int i = 0; i < statsList.Count; i++ )
         {
             if (statsList[i] != 0)
             {
                 switch(i)
                 {
-                    case 0: currentStats.Bladder += (float)statsList[i] * BaseModifier; break;
-                    case 1: currentStats.Bladder += (float)statsList[i] * BaseModifier; break;
-                    case 2: currentStats.Bladder += (float)statsList[i] * BaseModifier; break;
-                    case 3: currentStats.Bladder += (float)statsList[i] * BaseModifier; break;
-                    case 4: currentStats.Bladder += (float)statsList[i] * BaseModifier; break;
+                    case 0: currentStats.Stats.Bladder += (float)statsList[i] * BaseModifier; break;
+                    case 1: currentStats.Stats.Sleep += (float)statsList[i] * BaseModifier; break;
+                    case 2: currentStats.Stats.Thirst += (float)statsList[i] * BaseModifier; break;
+                    case 3: currentStats.Stats.Hunger += (float)statsList[i] * BaseModifier; break;
+                    case 4: currentStats.Stats.Cleanliness += (float)statsList[i] * BaseModifier; break;
 
                 }
             }

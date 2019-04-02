@@ -46,28 +46,28 @@ public class StatsUI : MonoBehaviour
         TempLocalScale.z = 0.92838f;
 
         //set based on camera view
-        namePos = Camera.main.transform.position;
+        //namePos = Camera.main.transform.position;
 
-        namePos.x = XAxisCount + 0.1f;
-        namePos.y = YAxisCount + 0.5f;
+       // namePos.x = XAxisCount + 0.1f;
+       // namePos.y = YAxisCount + 0.5f;
 
         // Assign positions one below the other
-        BladderStatPos = namePos;
-        namePos.y = namePos.y - 50.0f;
-        SleepStatPos =namePos;
-        namePos.y = namePos.y - 50.0f;
-        HungerStatPos = namePos;
-        namePos.y = namePos.y - 50.0f;
-        ThirstStatPos = namePos;
-        namePos.y = namePos.y - 50.0f;
-        CleanlinessStatPos = namePos;
+        //BladderStatPos = namePos;
+        //namePos.y = namePos.y - 50.0f;
+        //SleepStatPos =namePos;
+        //namePos.y = namePos.y - 50.0f;
+        //HungerStatPos = namePos;
+        //namePos.y = namePos.y - 50.0f;
+        //ThirstStatPos = namePos;
+        //namePos.y = namePos.y - 50.0f;
+        //CleanlinessStatPos = namePos;
 
         //Set positions
-        Bladder.transform.position = BladderStatPos;
-        Sleep.transform.position = SleepStatPos;
-        Hunger.transform.position = HungerStatPos;
-        Thirst.transform.position = ThirstStatPos;
-        Cleanliness.transform.position = CleanlinessStatPos;
+        //Bladder.transform.position = BladderStatPos;
+        //Sleep.transform.position = SleepStatPos;
+        //Hunger.transform.position = HungerStatPos;
+        //Thirst.transform.position = ThirstStatPos;
+        //Cleanliness.transform.position = CleanlinessStatPos;
 
         //Assign scales
         BladderStatScale = TempLocalScale;
@@ -117,11 +117,11 @@ public class StatsUI : MonoBehaviour
 	void Update () {
 
         // Change the scale of the stats from function SetStatAmount().
-        BladderStatScale.x = Mathf.Clamp(gameManager.currentStats.Bladder / 10, 0.0f, 1.0f);
-        SleepStatScale.x = gameManager.currentStats.Sleep;
-        ThirstStatScale.x = gameManager.currentStats.Thirst / 10.0f;
-        HungerStatScale.x = gameManager.currentStats.Hunger / 10.0f;
-        CleanlinessStatScale.x = gameManager.currentStats.Cleanliness / 10.0f;
+        BladderStatScale.x = Mathf.Clamp(gameManager.currentStats.Stats.Bladder / 100, 0.0f, 1.0f);
+        SleepStatScale.x = Mathf.Clamp(gameManager.currentStats.Stats.Sleep / 100, 0.0f, 1.0f);
+        ThirstStatScale.x = Mathf.Clamp(gameManager.currentStats.Stats.Thirst / 100, 0.0f, 1.0f);
+        HungerStatScale.x = Mathf.Clamp(gameManager.currentStats.Stats.Hunger / 100, 0.0f, 1.0f);
+        CleanlinessStatScale.x = Mathf.Clamp(gameManager.currentStats.Stats.Cleanliness / 100, 0.0f, 1.0f);
 
 
         Bladder.transform.localScale = BladderStatScale;
