@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -113,6 +113,82 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &28952224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 28952225}
+  - component: {fileID: 28952227}
+  - component: {fileID: 28952226}
+  m_Layer: 5
+  m_Name: Text (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &28952225
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28952224}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1020044801}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 192.65002, y: -129}
+  m_SizeDelta: {x: 385.3, y: 73}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &28952226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28952224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 3
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 44
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: HomeStuff asset pack was created by an artist named Mohelm97 and was downloaded
+    from the Unity asset store
+--- !u!222 &28952227
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28952224}
+  m_CullTransparentMesh: 0
 --- !u!1 &161670543
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -288.69998, y: -99}
+  m_AnchoredPosition: {x: -225.69998, y: -87}
   m_SizeDelta: {x: 289.3, y: 39.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &161670545
@@ -286,8 +362,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 215.09998, y: -120}
-  m_SizeDelta: {x: 398.6, y: 205.4}
+  m_AnchoredPosition: {x: 192.65002, y: -30.799988}
+  m_SizeDelta: {x: 385.3, y: 73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &209806563
 MonoBehaviour:
@@ -310,7 +386,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_FontSize: 20
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 0
@@ -321,8 +397,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FreeVoxelGirl and Homestuff assest packages were downloaded from Unity asset
-    store
+  m_Text: FreeVoxelGirl asset pack was created by an artists named Fire-Emotion and
+    downloaded from the Unit asset store
 --- !u!222 &209806564
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -362,7 +438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -287, y: -41}
+  m_AnchoredPosition: {x: -224, y: -29}
   m_SizeDelta: {x: 289.3, y: 39.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &356413459
@@ -435,12 +511,12 @@ RectTransform:
   m_Children:
   - {fileID: 1473231506}
   m_Father: {fileID: 1020044801}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -310, y: -260}
-  m_SizeDelta: {x: 240.5, y: 71.3}
+  m_AnchoredPosition: {x: -258.7, y: -180.6}
+  m_SizeDelta: {x: 223.2, y: 52.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &454135428
 MonoBehaviour:
@@ -560,7 +636,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 215.1, y: 155.7}
+  m_AnchoredPosition: {x: 184, y: 101}
   m_SizeDelta: {x: 398.6, y: 205.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &775083167
@@ -635,7 +711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -279.6, y: 80}
+  m_AnchoredPosition: {x: -216.6, y: 92}
   m_SizeDelta: {x: 306.6, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &918554339
@@ -774,6 +850,7 @@ RectTransform:
   - {fileID: 356413458}
   - {fileID: 775083166}
   - {fileID: 209806562}
+  - {fileID: 28952225}
   - {fileID: 454135427}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -921,7 +998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -288.69998, y: -157}
+  m_AnchoredPosition: {x: -225.69998, y: -145}
   m_SizeDelta: {x: 289.3, y: 39.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1151691809
@@ -1127,7 +1204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -287, y: 19}
+  m_AnchoredPosition: {x: -224, y: 31}
   m_SizeDelta: {x: 289.3, y: 39.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1343769101
@@ -1278,7 +1355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -261.4, y: 220}
+  m_AnchoredPosition: {x: -206, y: 168}
   m_SizeDelta: {x: 343, y: 100.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1508528564
