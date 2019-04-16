@@ -29,5 +29,20 @@ public class CharacterStats
     public float Thirst;
     public float Hunger;
     public float Cleanliness;
+
+    public float Art;
+    public float Science;
+    public float Cooking;
+    public float Maths;
+    public float Music;
+    public float Metalworking;
+    public float Romance;
+    public float Fashion;
+    public float Mechanical;
+    public float Programming;
+    public float Gaming;
+    public float Movies;
+    public float Reading;
+
     public GameTime CurrentTime;
 }

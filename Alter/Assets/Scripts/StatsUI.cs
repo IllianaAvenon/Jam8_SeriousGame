@@ -11,6 +11,9 @@ public class StatsUI : MonoBehaviour
     public Image Hunger;
     public Image Thirst;
     public Image Cleanliness;
+
+    public Image[] goalsImages;
+
     public GameManager gameManager;
 
     //Set Stat Positions according to camera
@@ -32,6 +35,8 @@ public class StatsUI : MonoBehaviour
 
     Vector3 CleanlinessStatPos;
     Vector3 CleanlinessStatScale;
+
+    Vector3[] goalsStatScales;
 
     //local scale
     Vector3 TempLocalScale;
@@ -83,6 +88,12 @@ public class StatsUI : MonoBehaviour
         Thirst.transform.localScale = ThirstStatScale;
         Cleanliness.transform.localScale = CleanlinessStatScale;
 
+        for (int i = 0; i < goalsImages.Length; ++i)
+        {
+            goalsStatScales[i] = TempLocalScale;
+            goalsImages[i].transform.localScale = goalsStatScales[i];
+        }
+
         gameManager = gameManager.GetComponent<GameManager>();
     }
 
@@ -90,6 +101,8 @@ public class StatsUI : MonoBehaviour
     //2) Affected stat amount. Pass value from 1-100 as int. As the function is based on scale, I convert it to 0-1 range in the function.  
     public void SetStatAmount(string tag, float AmountInBar)
     {
+        // I don't think this actually happens?
+
         if(tag=="Bladder")
         {
             BladderStatScale.x = (float)(AmountInBar) / 100;
@@ -116,6 +129,8 @@ public class StatsUI : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
 
+        Debug.Log(gameManager.currentStats.Stats.Cleanliness);
+
         // Change the scale of the stats from function SetStatAmount().
         BladderStatScale.x = Mathf.Clamp(gameManager.currentStats.Stats.Bladder / 100, 0.0f, 1.0f);
         SleepStatScale.x = Mathf.Clamp(gameManager.currentStats.Stats.Sleep / 100, 0.0f, 1.0f);
@@ -123,6 +138,19 @@ public class StatsUI : MonoBehaviour
         HungerStatScale.x = Mathf.Clamp(gameManager.currentStats.Stats.Hunger / 100, 0.0f, 1.0f);
         CleanlinessStatScale.x = Mathf.Clamp(gameManager.currentStats.Stats.Cleanliness / 100, 0.0f, 1.0f);
 
+        goalsStatScales[0].x =  Mathf.Clamp(gameManager.currentStats.Stats.Art / 100, 0.0f, 1.0f);
+        goalsStatScales[1].x =  Mathf.Clamp(gameManager.currentStats.Stats.Science / 100, 0.0f, 1.0f);
+        goalsStatScales[2].x =  Mathf.Clamp(gameManager.currentStats.Stats.Cooking / 100, 0.0f, 1.0f);
+        goalsStatScales[3].x =  Mathf.Clamp(gameManager.currentStats.Stats.Maths / 100, 0.0f, 1.0f);
+        goalsStatScales[4].x =  Mathf.Clamp(gameManager.currentStats.Stats.Music / 100, 0.0f, 1.0f);
+        goalsStatScales[5].x =  Mathf.Clamp(gameManager.currentStats.Stats.Metalworking / 100, 0.0f, 1.0f);
+        goalsStatScales[6].x =  Mathf.Clamp(gameManager.currentStats.Stats.Romance / 100, 0.0f, 1.0f);
+        goalsStatScales[7].x =  Mathf.Clamp(gameManager.currentStats.Stats.Fashion / 100, 0.0f, 1.0f);
+        goalsStatScales[8].x =  Mathf.Clamp(gameManager.currentStats.Stats.Mechanical / 100, 0.0f, 1.0f);
+        goalsStatScales[9].x =  Mathf.Clamp(gameManager.currentStats.Stats.Programming / 100, 0.0f, 1.0f);
+        goalsStatScales[10].x = Mathf.Clamp(gameManager.currentStats.Stats.Gaming / 100, 0.0f, 1.0f);
+        goalsStatScales[11].x = Mathf.Clamp(gameManager.currentStats.Stats.Movies / 100, 0.0f, 1.0f);
+        goalsStatScales[12].x = Mathf.Clamp(gameManager.currentStats.Stats.Reading / 100, 0.0f, 1.0f);
 
         Bladder.transform.localScale = BladderStatScale;
         Sleep.transform.localScale = SleepStatScale;
@@ -130,5 +158,9 @@ public class StatsUI : MonoBehaviour
         Thirst.transform.localScale = ThirstStatScale;
         Cleanliness.transform.localScale = CleanlinessStatScale;
 
+        for (int i = 0; i < goalsImages.Length; ++i)
+        {
+            goalsImages[i].transform.localScale = goalsStatScales[i];
+        }
     }
 }
