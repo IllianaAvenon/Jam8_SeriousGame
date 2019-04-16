@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
     public float BaseModifier = 0.3f;
     public float stressTest = 0.0f;
     public Animator fade;
-    public GameObject Radio;
 
     private void Start()
     {
@@ -29,7 +28,7 @@ public class GameManager : MonoBehaviour
         }
 
         stressTest += Time.deltaTime;
-        if (stressTest > 300.0f)
+        if (stressTest > 100.0f)
         {
             if (currentStats.Stats.Bladder < 15 || currentStats.Stats.Sleep < 15 || currentStats.Stats.Thirst < 15 || currentStats.Stats.Hunger < 15 || currentStats.Stats.Cleanliness < 15 || currentStats.Stats.Bladder + currentStats.Stats.Sleep + currentStats.Stats.Thirst + currentStats.Stats.Hunger + currentStats.Stats.Cleanliness < 80)
             {
@@ -62,14 +61,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-      public void OnInteraction(GameObject item)
+    public void OnInteraction(GameObject item)
     {
-        if(item.name == "Radio") { Radio.SetActive(true); }
+
         Item interactedItem = item.GetComponent<Item>();
         if (interactedItem == null) return;
         int[] Influencers = interactedItem.GetTags();
         List<int> goalsList = new List<int>();
-       List<int> statsList = new List<int>();
+        List<int> statsList = new List<int>();
 
         for (int i = 0; i < Influencers.Length - 5; i++)
         {
@@ -81,29 +80,18 @@ public class GameManager : MonoBehaviour
             statsList.Add(Influencers[i]);
         }
 
-
-
-
-
         //Sort out effects of objects on Mental State
         int index = 0;
         foreach (int tag in goalsList)
         {
             if (tag != 0)
             {
-                if (currentGoals.listOfGoals.Contains(GoalsConversion[index]))
-                {
-                    currentStats.Stats.Anxiety -= (float)tag * BaseModifier;
-                    currentStats.Stats.Stress -= (float)tag * BaseModifier;
-                    currentStats.Stats.Happiness += (float)tag * BaseModifier;
-                }
 
-                else
-                {
-                    currentStats.Stats.Anxiety += (float)tag * BaseModifier;
-                    currentStats.Stats.Stress += (float)tag * BaseModifier;
-                    currentStats.Stats.Happiness -= (float)tag * BaseModifier;
-                }
+                currentStats.Stats.Anxiety -= (float)tag * BaseModifier;
+                currentStats.Stats.Stress -= (float)tag * BaseModifier;
+                currentStats.Stats.Happiness += (float)tag * BaseModifier;
+                currentStats.UpdateGoal(index, (int)((float)tag * BaseModifier));
+
             }
 
             index++;
@@ -111,11 +99,11 @@ public class GameManager : MonoBehaviour
         index = 0;
 
         //Sort out Effects of Objects on Physical State
-        for(int i = 0; i < statsList.Count; i++ )
+        for (int i = 0; i < statsList.Count; i++)
         {
             if (statsList[i] != 0)
             {
-                switch(i)
+                switch (i)
                 {
                     case 0: currentStats.Stats.Bladder += (float)statsList[i] * BaseModifier; break;
                     case 1: currentStats.Stats.Sleep += (float)statsList[i] * BaseModifier; break;
@@ -125,7 +113,6 @@ public class GameManager : MonoBehaviour
 
                 }
             }
-
         }
     }
 }
