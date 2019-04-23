@@ -44,8 +44,8 @@ public class StatsUI : MonoBehaviour
 
     // Use this for initialization
     void Start () {
-   
-        Vector3 namePos;
+
+        goalsStatScales = new Vector3[13];
         TempLocalScale.x = 1.0f;
         TempLocalScale.y = 0.2024923f;
         TempLocalScale.z = 0.92838f;
