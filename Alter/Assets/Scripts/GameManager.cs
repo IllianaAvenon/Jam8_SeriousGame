@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -64,7 +65,17 @@ public class GameManager : MonoBehaviour
 
       public void OnInteraction(GameObject item)
     {
-        if(item.name == "Radio") { Radio.SetActive(true); }
+        if(item.name == "door")
+        {
+            if(SceneManager.GetActiveScene().name == "Main")
+            {
+                SceneManager.LoadScene("Outside");
+            }
+            else
+            {
+                SceneManager.LoadScene("Main");
+            }
+        }
         Item interactedItem = item.GetComponent<Item>();
         if (interactedItem == null) return;
         int[] Influencers = interactedItem.GetTags();
