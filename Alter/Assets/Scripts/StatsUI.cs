@@ -129,8 +129,6 @@ public class StatsUI : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
 
-        Debug.Log(gameManager.currentStats.Stats.Cleanliness);
-
         // Change the scale of the stats from function SetStatAmount().
         BladderStatScale.x = Mathf.Clamp(gameManager.currentStats.Stats.Bladder / 100, 0.0f, 1.0f);
         SleepStatScale.x = Mathf.Clamp(gameManager.currentStats.Stats.Sleep / 100, 0.0f, 1.0f);

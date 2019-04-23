@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         }
 
         stressTest += Time.deltaTime;
-        if (stressTest > 300.0f)
+        if (stressTest > 4.0f)
         {
             if (currentStats.Stats.Bladder < 15 || currentStats.Stats.Sleep < 15 || currentStats.Stats.Thirst < 15 || currentStats.Stats.Hunger < 15 || currentStats.Stats.Cleanliness < 15 || currentStats.Stats.Bladder + currentStats.Stats.Sleep + currentStats.Stats.Thirst + currentStats.Stats.Hunger + currentStats.Stats.Cleanliness < 80)
             {
@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
             currentStats.Stats.Hunger -= 1;
             currentStats.Stats.Thirst -= 1;
             currentStats.Stats.Cleanliness -= 1;
+            currentStats.StatDecrement();
         }
 
 
@@ -93,33 +94,13 @@ public class GameManager : MonoBehaviour
         }
 
 
-
-
-
-        //Sort out effects of objects on Mental State
-        int index = 0;
-        foreach (int tag in goalsList)
+       for(int i = 0; i < goalsList.Count; i++)
         {
-            if (tag != 0)
+            if(goalsList[i] != 0)
             {
-                if (currentGoals.listOfGoals.Contains(GoalsConversion[index]))
-                {
-                    currentStats.Stats.Anxiety -= (float)tag * BaseModifier;
-                    currentStats.Stats.Stress -= (float)tag * BaseModifier;
-                    currentStats.Stats.Happiness += (float)tag * BaseModifier;
-                }
-
-                else
-                {
-                    currentStats.Stats.Anxiety += (float)tag * BaseModifier;
-                    currentStats.Stats.Stress += (float)tag * BaseModifier;
-                    currentStats.Stats.Happiness -= (float)tag * BaseModifier;
-                }
+                currentStats.SetStatIncrement(i, goalsList[i]);
             }
-
-            index++;
         }
-        index = 0;
 
         //Sort out Effects of Objects on Physical State
         for(int i = 0; i < statsList.Count; i++ )
