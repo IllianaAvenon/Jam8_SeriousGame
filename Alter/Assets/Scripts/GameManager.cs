@@ -15,7 +15,12 @@ public class GameManager : MonoBehaviour
     public float BaseModifier = 0.3f;
     public float stressTest = 0.0f;
     public Animator fade;
-    public GameObject Radio;
+    public ParticleSystem clean;
+    public ParticleSystem food;
+    public ParticleSystem thirst;
+    public ParticleSystem goals;
+    public ParticleSystem sleep;
+    private bool goalPass;
 
     private void Start()
     {
@@ -49,7 +54,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             fade.SetTrigger("enter");
-            currentStats.Stats = StatsSaverLoader.Instance.Load(++currentStats.PlayerID);
+            currentStats.Stats = StatsSaverLoader.Instance.Load(currentStats.PlayerID);
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -99,6 +104,12 @@ public class GameManager : MonoBehaviour
             if(goalsList[i] != 0)
             {
                 currentStats.SetStatIncrement(i, goalsList[i]);
+                goalPass = true;
+            }
+
+            if(goalPass)
+            {
+                goals.transform.position = physicalPlayer.transform.position; goals.Play(); goalPass = false;
             }
         }
 
@@ -110,10 +121,10 @@ public class GameManager : MonoBehaviour
                 switch(i)
                 {
                     case 0: currentStats.Stats.Bladder += (float)statsList[i] * BaseModifier; break;
-                    case 1: currentStats.Stats.Sleep += (float)statsList[i] * BaseModifier; break;
-                    case 2: currentStats.Stats.Thirst += (float)statsList[i] * BaseModifier; break;
-                    case 3: currentStats.Stats.Hunger += (float)statsList[i] * BaseModifier; break;
-                    case 4: currentStats.Stats.Cleanliness += (float)statsList[i] * BaseModifier; break;
+                    case 1: currentStats.Stats.Sleep += (float)statsList[i] * BaseModifier; sleep.transform.position = physicalPlayer.transform.position; sleep.Play(); break;
+                    case 2: currentStats.Stats.Thirst += (float)statsList[i] * BaseModifier; thirst.transform.position = physicalPlayer.transform.position; thirst.Play(); break;
+                    case 3: currentStats.Stats.Hunger += (float)statsList[i] * BaseModifier; food.transform.position = physicalPlayer.transform.position; food.Play(); break;
+                    case 4: currentStats.Stats.Cleanliness += (float)statsList[i] * BaseModifier; clean.transform.position = physicalPlayer.transform.position; clean.Play(); break;
 
                 }
             }

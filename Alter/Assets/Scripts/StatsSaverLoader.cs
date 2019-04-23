@@ -14,19 +14,7 @@ public class StatsSaverLoader : MonoBehaviour
         }
         Instance = this;
     }
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+   
     public void Save(CharacterStats stats, uint playerID)
     {
         string jsonString = JsonUtility.ToJson(stats);

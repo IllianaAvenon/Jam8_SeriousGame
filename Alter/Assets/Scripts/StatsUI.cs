@@ -50,30 +50,6 @@ public class StatsUI : MonoBehaviour
         TempLocalScale.y = 0.2024923f;
         TempLocalScale.z = 0.92838f;
 
-        //set based on camera view
-        //namePos = Camera.main.transform.position;
-
-       // namePos.x = XAxisCount + 0.1f;
-       // namePos.y = YAxisCount + 0.5f;
-
-        // Assign positions one below the other
-        //BladderStatPos = namePos;
-        //namePos.y = namePos.y - 50.0f;
-        //SleepStatPos =namePos;
-        //namePos.y = namePos.y - 50.0f;
-        //HungerStatPos = namePos;
-        //namePos.y = namePos.y - 50.0f;
-        //ThirstStatPos = namePos;
-        //namePos.y = namePos.y - 50.0f;
-        //CleanlinessStatPos = namePos;
-
-        //Set positions
-        //Bladder.transform.position = BladderStatPos;
-        //Sleep.transform.position = SleepStatPos;
-        //Hunger.transform.position = HungerStatPos;
-        //Thirst.transform.position = ThirstStatPos;
-        //Cleanliness.transform.position = CleanlinessStatPos;
-
         //Assign scales
         BladderStatScale = TempLocalScale;
         SleepStatScale = TempLocalScale;

@@ -446,9 +446,9 @@ GameObject:
   - component: {fileID: 4000012457338160}
   - component: {fileID: 95000014152591758}
   - component: {fileID: 884762815}
-  - component: {fileID: 884762811}
   - component: {fileID: 884762810}
   - component: {fileID: 884762814}
+  - component: {fileID: 884762811}
   m_Layer: 0
   m_Name: KadukiPrefab
   m_TagString: Untagged
@@ -507,19 +507,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &884762811
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011941746954}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.912024, y: 1.0046892, z: 0.2798698}
-  m_Center: {x: -0.04398799, y: 0.47065306, z: -0.09630692}
 --- !u!114 &884762810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,6 +558,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2fb1e930fd4b4a8bae85792b5812fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &884762811
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011941746954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.39162254
+  m_Height: 1.1761209
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5405155, z: -0.10837746}
 --- !u!1 &1000012143871954
 GameObject:
   m_ObjectHideFlags: 0
