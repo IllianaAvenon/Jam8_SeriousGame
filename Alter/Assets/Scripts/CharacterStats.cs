@@ -16,7 +16,6 @@ public class GameTime
     }
 }
 
-
 [Serializable]
 public class CharacterStats
 {

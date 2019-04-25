@@ -37,16 +37,16 @@ public class GameManager : MonoBehaviour
         stressTest += Time.deltaTime;
         if (stressTest > 4.0f)
         {
-            if (currentStats.Stats.Bladder < 15 || currentStats.Stats.Sleep < 15 || currentStats.Stats.Thirst < 15 || currentStats.Stats.Hunger < 15 || currentStats.Stats.Cleanliness < 15 || currentStats.Stats.Bladder + currentStats.Stats.Sleep + currentStats.Stats.Thirst + currentStats.Stats.Hunger + currentStats.Stats.Cleanliness < 80)
+            if (currentStats.Stats.Bladder < 20 || currentStats.Stats.Sleep < 20 || currentStats.Stats.Thirst < 20 || currentStats.Stats.Hunger < 20 || currentStats.Stats.Cleanliness < 20 || currentStats.Stats.Bladder + currentStats.Stats.Sleep + currentStats.Stats.Thirst + currentStats.Stats.Hunger + currentStats.Stats.Cleanliness < 200)
             {
                 currentStats.Stats.Stress += BaseModifier;
             }
             stressTest = 0.0f;
-            currentStats.Stats.Bladder -= 1;
-            currentStats.Stats.Sleep -= 1;
-            currentStats.Stats.Hunger -= 1;
-            currentStats.Stats.Thirst -= 1;
-            currentStats.Stats.Cleanliness -= 1;
+            currentStats.Stats.Bladder = Mathf.Max(currentStats.Stats.Bladder - 1, 0);
+            currentStats.Stats.Sleep = Mathf.Max(currentStats.Stats.Sleep - 1, 0);
+            currentStats.Stats.Hunger = Mathf.Max(currentStats.Stats.Hunger- 1, 0);
+            currentStats.Stats.Thirst = Mathf.Max(currentStats.Stats.Thirst - 1, 0);
+            currentStats.Stats.Cleanliness = Mathf.Max(currentStats.Stats.Cleanliness - 1, 0);
             currentStats.StatDecrement();
         }
 
@@ -76,6 +76,12 @@ public class GameManager : MonoBehaviour
 
       public void OnInteraction(GameObject item)
     {
+		if(item.tag == "NPC")
+		{
+			item.GetComponent<NPC>().Interact(physicalPlayer);
+			return;
+		}
+		
         if(item.name == "door")
         {
             if(SceneManager.GetActiveScene().name == "Main")
@@ -125,11 +131,11 @@ public class GameManager : MonoBehaviour
             {
                 switch(i)
                 {
-                    case 0: currentStats.Stats.Bladder += (float)statsList[i] * BaseModifier; break;
-                    case 1: currentStats.Stats.Sleep += (float)statsList[i] * BaseModifier; sleep.transform.position = physicalPlayer.transform.position; sleep.Play(); break;
-                    case 2: currentStats.Stats.Thirst += (float)statsList[i] * BaseModifier; thirst.transform.position = physicalPlayer.transform.position; thirst.Play(); break;
-                    case 3: currentStats.Stats.Hunger += (float)statsList[i] * BaseModifier; food.transform.position = physicalPlayer.transform.position; food.Play(); break;
-                    case 4: currentStats.Stats.Cleanliness += (float)statsList[i] * BaseModifier; clean.transform.position = physicalPlayer.transform.position; clean.Play(); break;
+                    case 0: currentStats.Stats.Bladder = Mathf.Min(currentStats.Stats.Bladder + (float)statsList[i] * BaseModifier, 100); break;
+                    case 1: currentStats.Stats.Sleep = Mathf.Min(currentStats.Stats.Sleep+ (float)statsList[i] * BaseModifier, 100); sleep.transform.position = physicalPlayer.transform.position; sleep.Play(); break;
+                    case 2: currentStats.Stats.Thirst = Mathf.Min(currentStats.Stats.Thirst+ (float)statsList[i] * BaseModifier, 100); thirst.transform.position = physicalPlayer.transform.position; thirst.Play(); break;
+                    case 3: currentStats.Stats.Hunger = Mathf.Min(currentStats.Stats.Hunger+ (float)statsList[i] * BaseModifier, 100); food.transform.position = physicalPlayer.transform.position; food.Play(); break;
+                    case 4: currentStats.Stats.Cleanliness = Mathf.Min(currentStats.Stats.Cleanliness + (float)statsList[i] * BaseModifier, 100); clean.transform.position = physicalPlayer.transform.position; clean.Play(); break;
 
                 }
             }
