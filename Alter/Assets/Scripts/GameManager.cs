@@ -20,11 +20,14 @@ public class GameManager : MonoBehaviour
     public ParticleSystem thirst;
     public ParticleSystem goals;
     public ParticleSystem sleep;
+    public SceneTransition trans;
     private bool goalPass;
 
     private void Start()
     {
         currentStats = physicalPlayer.GetComponent<SaveLoadTester>();
+        currentStats.Stats = StatsSaverLoader.Instance.Load(0);
+        currentStats.PlayerID = 0;
     }
 
     private void Update()
@@ -54,8 +57,31 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             fade.SetTrigger("enter");
-            currentStats.Stats = StatsSaverLoader.Instance.Load(currentStats.PlayerID);
+            StatsSaverLoader.Instance.Save(currentStats.Stats, currentStats.PlayerID);
+            //Debug.Log(trans);
+            //trans.Transition("MainMenu");
         }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            //fade.SetTrigger("enter");
+            currentStats.Stats = StatsSaverLoader.Instance.Load(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            //fade.SetTrigger("enter");
+            currentStats.Stats = StatsSaverLoader.Instance.Load(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            //fade.SetTrigger("enter");
+            currentStats.Stats = StatsSaverLoader.Instance.Load(3);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            //fade.SetTrigger("enter");
+            currentStats.Stats = StatsSaverLoader.Instance.Load(0);
+        }
+       
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -86,10 +112,14 @@ public class GameManager : MonoBehaviour
         {
             if(SceneManager.GetActiveScene().name == "Main")
             {
+                Debug.Log("hello");
+                StatsSaverLoader.Instance.Save(currentStats.Stats, currentStats.PlayerID);
+                
                 SceneManager.LoadScene("Outside");
             }
             else
             {
+                StatsSaverLoader.Instance.Save(currentStats.Stats, currentStats.PlayerID);
                 SceneManager.LoadScene("Main");
             }
         }
