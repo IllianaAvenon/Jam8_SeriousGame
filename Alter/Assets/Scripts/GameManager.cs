@@ -44,8 +44,8 @@ public class GameManager : MonoBehaviour
             stressTest = 0.0f;
             currentStats.Stats.Bladder = Mathf.Max(currentStats.Stats.Bladder - 1, 0);
             currentStats.Stats.Sleep = Mathf.Max(currentStats.Stats.Sleep - 1, 0);
-            currentStats.Stats.Hunger = Mathf.Max(currentStats.Stats.Hunger- 1, 0);
             currentStats.Stats.Thirst = Mathf.Max(currentStats.Stats.Thirst - 1, 0);
+            currentStats.Stats.Hunger = Mathf.Max(currentStats.Stats.Hunger- 1, 0);
             currentStats.Stats.Cleanliness = Mathf.Max(currentStats.Stats.Cleanliness - 1, 0);
             currentStats.StatDecrement();
         }
