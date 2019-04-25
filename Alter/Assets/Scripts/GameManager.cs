@@ -64,7 +64,12 @@ public class GameManager : MonoBehaviour
             if (Physics.Raycast(ray, out hit, float.PositiveInfinity))
             {
                 Debug.Log(hit.collider);
-                OnInteraction(hit.collider.gameObject);
+
+                if (Vector3.Distance(physicalPlayer.transform.position, hit.transform.position) <= 2.5f)
+                {
+                    Debug.Log("Actual hit");
+                    OnInteraction(hit.collider.gameObject);
+                }
             }
         }
     }
