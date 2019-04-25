@@ -42,36 +42,36 @@ public class SaveLoadTester : MonoBehaviour
     {
         switch (index)
         {
-            case 0: Stats.Art+= control; break;
-            case 1: Stats.Science+= control; break;
-            case 2: Stats.Cooking+= control; break;
-            case 3: Stats.Maths+= control; break;
-            case 4: Stats.Music+= control; break;
-            case 5: Stats.Metalworking+= control; break;
-            case 6: Stats.Romance+= control; break;
-            case 7: Stats.Fashion+= control; break;
-            case 8: Stats.Mechanical+= control; break;
-            case 9: Stats.Programming+= control; break;
-            case 10: Stats.Gaming+= control; break;
-            case 11: Stats.Movies+= control; break;
-            case 12: Stats.Reading+= control; break;
+            case 0: Stats.Art = Mathf.Min(Stats.Art + control, 100); break;
+            case 1: Stats.Science = Mathf.Min(Stats.Science + control, 100); break;
+            case 2: Stats.Cooking = Mathf.Min(Stats.Science + control, 100); break;
+            case 3: Stats.Maths = Mathf.Min(Stats.Maths + control, 100); break;
+            case 4: Stats.Music = Mathf.Min(Stats.Music + control, 100); break;
+            case 5: Stats.Metalworking = Mathf.Min(Stats.Metalworking + control, 100); break;
+            case 6: Stats.Romance = Mathf.Min(Stats.Romance + control, 100); break;
+            case 7: Stats.Fashion = Mathf.Min(Stats.Fashion + control, 100); break;
+            case 8: Stats.Mechanical = Mathf.Min(Stats.Mechanical + control, 100); break;
+            case 9: Stats.Programming = Mathf.Min(Stats.Programming + control, 100); break;
+            case 10: Stats.Gaming = Mathf.Min(Stats.Gaming + control, 100); break;
+            case 11: Stats.Movies = Mathf.Min(Stats.Movies + control, 100); break;
+            case 12: Stats.Reading = Mathf.Min(Stats.Reading + control, 100); break;
         }
     }
 
     public void StatDecrement()
     {
-            Stats.Art--; 
-            Stats.Science--; 
-            Stats.Cooking--; 
-            Stats.Maths--; 
-            Stats.Music--; 
-            Stats.Metalworking--; 
-            Stats.Romance--; 
-            Stats.Fashion--; 
-            Stats.Mechanical--; 
-            Stats.Programming--; 
-             Stats.Gaming--; 
-             Stats.Movies--; 
-             Stats.Reading--; 
+            Stats.Art = Mathf.Max(Stats.Art - 1, 0); 
+            Stats.Science = Mathf.Max(Stats.Science - 1, 0); 
+            Stats.Cooking = Mathf.Max(Stats.Cooking - 1, 0); 
+            Stats.Maths = Mathf.Max(Stats.Maths - 1, 0); 
+            Stats.Music = Mathf.Max(Stats.Music - 1, 0); 
+            Stats.Metalworking = Mathf.Max(Stats.Metalworking - 1, 0); 
+            Stats.Romance = Mathf.Max(Stats.Romance - 1, 0); 
+            Stats.Fashion = Mathf.Max(Stats.Fashion - 1, 0); 
+            Stats.Mechanical = Mathf.Max(Stats.Mechanical - 1, 0); 
+            Stats.Programming = Mathf.Max(Stats.Programming - 1, 0); 
+			Stats.Gaming = Mathf.Max(Stats.Gaming - 1, 0); 
+            Stats.Movies = Mathf.Max(Stats.Movies - 1, 0); 
+            Stats.Reading = Mathf.Max(Stats.Reading - 1, 0); 
     }
 }

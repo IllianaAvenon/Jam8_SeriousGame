@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44658828, g: 0.49642313, b: 0.5748253, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17313,6 +17313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1298644295}
   - component: {fileID: 1298644296}
+  - component: {fileID: 1298644297}
   m_Layer: 0
   m_Name: Science
   m_TagString: Untagged
@@ -17367,6 +17368,19 @@ MonoBehaviour:
   Thirst: 0
   Hunger: 0
   Cleanliness: 0
+--- !u!65 &1298644297
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298644294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.2, z: 0.4}
+  m_Center: {x: -1.807155, y: 0.9386842, z: -1.2}
 --- !u!1 &1305370154
 GameObject:
   m_ObjectHideFlags: 0
@@ -28322,6 +28336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2070546108}
   - component: {fileID: 2070546109}
+  - component: {fileID: 2070546110}
   m_Layer: 0
   m_Name: Art
   m_TagString: Untagged
@@ -28376,6 +28391,19 @@ MonoBehaviour:
   Thirst: 0
   Hunger: 0
   Cleanliness: 0
+--- !u!65 &2070546110
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070546107}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 0.3, z: 0.56}
+  m_Center: {x: -1.9, y: 0.8580287, z: 0.1939192}
 --- !u!1 &2093652175
 GameObject:
   m_ObjectHideFlags: 0

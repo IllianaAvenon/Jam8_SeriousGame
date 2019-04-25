@@ -1,0 +1,81 @@
+ {
+	"choice": [
+		{
+			"dialogue": "I just got this new ice cream stand! What do you think?",
+			"opt1": "It's adorable, I love it!",
+			"opt2": "I think it's kinda lame tbh...",
+			"path1": 1,
+			"path2": 4,
+			"friendMod1": 1,
+			"friendMod2": -1,
+			"relMod1": 1,
+			"relMod2": -1
+		},
+		{
+			"dialogue": "Aww, thanks! Do you wanna try some? I'll give you one for free",
+			"opt1": "Sure",
+			"opt2": "Maybe later",
+			"path1": 2,
+			"path2": 3,
+			"friendMod1": 1,
+			"friendMod2": 0,
+			"relMod1": 0,
+			"relMod2": 0
+		},
+		{
+			"dialogue": "I hope you like it!",
+			"opt1": "",
+			"opt2": "",
+			"path1": -1,
+			"path2": -1,
+			"friendMod1": 0,
+			"friendMod2": 0,
+			"relMod1": 0,
+			"relMod2": 0
+		},
+		{
+			"dialogue": "Don't wait too long, I might give it to someone else!",
+			"opt1": "",
+			"opt2": "",
+			"path1": -1,
+			"path2": -1,
+			"friendMod1": 0,
+			"friendMod2": 0,
+			"relMod1": 0,
+			"relMod2": 0
+		},
+		{
+			"dialogue": "Wow, you don't have to be so rude!",
+			"opt1": "Sorry, that was mean...",
+			"opt2": "But it's true",
+			"path1": 5,
+			"path2": 6,
+			"friendMod1": 1,
+			"friendMod2": -2,
+			"relMod1": 0,
+			"relMod2": -2
+		},
+		{
+			"dialogue": "I'm glad you realize it at least.",
+			"opt1": "",
+			"opt2": "",
+			"path1": -1,
+			"path2": -1,
+			"friendMod1": 0,
+			"friendMod2": 0,
+			"relMod1": 0,
+			"relMod2": 0
+		},
+		{
+			"dialogue": "Well then you can leave. Now.",
+			"opt1": "",
+			"opt2": "",
+			"path1": -1,
+			"path2": -1,
+			"friendMod1": 0,
+			"friendMod2": 0,
+			"relMod1": 0,
+			"relMod2": 0
+		}
+	]
+ }
